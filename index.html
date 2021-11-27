@@ -12,7 +12,21 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <h1>HELLO</h1>
+    <h1>Make a Sonogram</h1>
+    <p>This is not <a href="https://colinmorris.github.io/SongSim/#/">Colin Morris' greatest song visualization in the world</a>, this is just a tribute...</p>
+    <form>
+        <fieldset>
+            <legend>copy song details below</legend>
+            <label for="artist">artist (optional)</label><br>
+            <input type="text" name="artist"><br>
+            <label for="song_name">song name (optional)</label><br>
+            <input type="text" name="song_name"><br>
+            <label for="lyrics">lyrics (or whatever you want to visualize)</label><br>
+            <textarea name="lyrics" rows="15" cols="45"></textarea><br>
+            <input type="submit" value="render sonogram">
+        </fieldset>
+    </form>
+    <div id="container"></div>
     <script type="module" src="index.js"></script>
 </body>
 </html>
